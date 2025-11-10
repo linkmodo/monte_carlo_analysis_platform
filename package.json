@@ -1,6 +1,7 @@
 {
   "name": "monte-carlo-analysis-portal",
   "version": "1.0.0",
+  "type": "module",
   "description": "Monte Carlo Analysis Portal for business decision support",
   "private": true,
   "scripts": {
