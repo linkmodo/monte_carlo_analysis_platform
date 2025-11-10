@@ -1,7 +1,11 @@
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
-  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+  # Skip Python dependency installation
+  NETLIFY_SKIP_PYTHON_INSTALL = "true"
 
 [[redirects]]
   from = "/api/*"
